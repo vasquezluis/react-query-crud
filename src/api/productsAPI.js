@@ -10,6 +10,7 @@ export const getProducts = async () => {
   return res.data;
 };
 
+// export const createProduct = (product) => console.log(product);;
 export const createProduct = (product) => productsAPI.post("/", product);
 
 export const deleteProduct = (id) => productsAPI.delete(`/${id}`);
